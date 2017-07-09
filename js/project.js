@@ -1,3 +1,9 @@
+// $(".thumbnail").simpleLightbox({
+// 	showCounter: false
+// });
+
+$('.thumbnail').simpleLightbox();
+
 $(".gallery").masonry({
   itemSelector: ".thumbnail",
   columnWidth: ".thumbnail",
@@ -5,9 +11,11 @@ $(".gallery").masonry({
 });
 
 $(".touchevents .thumbnail").hammer().bind("press", function() {
-// Your code here
+	$('.thumbnail').simpleLightbox();
 });
 
 $(".touchevents .thumbnail").hammer().bind("swipe", function() {
-// Your code here
+	$('.thumbnail').simpleLightbox();
 });
+
+

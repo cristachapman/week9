@@ -39,6 +39,15 @@ body {
 	opacity: 1;
 }
 
+.no-touchevents .caption {
+  display: none;
+}
+
+
+.no-touchevents .thumbnail:hover .caption {
+  display: block;
+}
+
 img {
 	width: 100%;
 	display: block;
